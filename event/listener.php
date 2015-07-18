@@ -16,10 +16,10 @@ class listener implements EventSubscriberInterface
 
 	static public function getSubscribedEvents()	
 	{		
-		return array('core.user_setup' => 'setup1',);	
+		return array('core.user_setup' => 'setup',);	
 	}
 	
-	public function setup1($event)	
+	public function setup($event)	
 	{
 	if ($this->user->data['group_id'] == 5 || $this->user->data['user_id'] == 2 )
         {
