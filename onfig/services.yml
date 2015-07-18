@@ -1,0 +1,8 @@
+services:
+    micogian.header.listener:
+        class: micogian\header\event\listener
+        arguments:
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }
