@@ -21,8 +21,7 @@ class listener implements EventSubscriberInterface
 	
 	public function setup1($event)	
 	{
-		global $user;
-        if ($this->user->data['group_id'] == 5 || $this->user->data['user_id'] == 2 )
+	if ($this->user->data['group_id'] == 5 || $this->user->data['user_id'] == 2 )
         {
 		$this->template->assign_vars(array(
 			'STAFF'	=> "staff" )
